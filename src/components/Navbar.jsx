@@ -1,56 +1,68 @@
 import React from "react";
+import logo from '../images/cropped-gill-logo.png'
 
 function Navbar() {
-  return (
-    <section>
-      <nav
-        className="navbar navbar-expand-lg fixed-top navbar-light bg-light "
-        style={{ color: "blue" }}
-      >
-        <div className="container">
-          <a className="navbar-brand logo" href="/"></a>
-          <button
-            class="navbar-toggler collapsed"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarCollapse"
-          >
-            <sapn className="navbar-toggler-icon"></sapn>
-          </button>
-          <div className="navbar-collapse collapse" id="navbarCollapse">
-            <ul className="navbar-nav ml-auto">
-              <li className="nav-item">
-                <a className="nav-link active" href="#home">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#about">
-                  About
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#service">
-                  Service
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#Clients">
-                  Clients
-                </a>
-              </li>
+    return (
+        <section>
+            <nav
+                className="navbar navbar-expand-lg fixed-top navbar-light  "
+              
+            >
+                <div className="container">
+                    <a className="navbar-brand logo" href="/">
+                        <img src={logo} alt="logo"  height="70px"></img>
+                    </a>
+                    <button
+                        className="navbar-toggler collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarCollapse"
+                    >
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div className="navbar-collapse collapse" color="white" id="navbarCollapse">
+                        <ul className="navbar-nav ml-auto">
+                            <li className="nav-item">
+                                <a className="nav-link active" href="#home">
+                                    Home
+                                </a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#about">
+                                    About
+                                </a>
+                            </li>
+                            <li className="nav-item dropdown"> 
+                                <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="#Service">
+                                    Service
+                                </a>
+                                <ul className="dropdown-menu">
+                                    <li><a className="dropdown-item" href="/">Complete Website Development 
+                                    <br></br>and Website Designing</a></li>
+                                    <li><a className="dropdown-item" href="/">Creative Web Design</a></li>
+                                    <li><a className="dropdown-item" href="/">Custom Web Development</a></li>
+                                    <li><a className="dropdown-item" href="/">Multimedia Presentation</a></li>
+                                    <li><a className="dropdown-item" href="/">Search Engine Optimization</a></li>
+                                    <li><a className="dropdown-item" href="/">E-Buisness</a></li>
+                                </ul>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#Clients">
+                                    Clients
+                                </a>
+                            </li>
 
-              <li className="nav-item">
-                <a className="nav-link" href="#Contact Us">
-                  Contact us
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </section>
-  );
+                            <li className="nav-item">
+                                <a className="nav-link" href="#Contact Us">
+                                    Contact us
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    );
 }
 
 export default Navbar;
