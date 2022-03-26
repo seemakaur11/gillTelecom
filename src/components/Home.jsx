@@ -1,10 +1,10 @@
 import React from 'react'
-
+import about from '../images/about.jpg';
 function Home() {
   return (
     <div>
-      <h1>seema ak pyari ladki h</h1>
-    </div>
+    
+     </div>
   )
 }
 
