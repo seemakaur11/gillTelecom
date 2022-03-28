@@ -2,7 +2,6 @@ import React from 'react';
 import about from '../images/about.jpg';
 import about1 from '../images/about1.jpg';
 import about3 from '../images/about3.jpg';
-import about4 from '../images/about4.jpg';
 import about5 from '../images/about5.jpg';
 function About() {
   return (

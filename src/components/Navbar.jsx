@@ -1,6 +1,5 @@
 import React from "react";
 import logo from '../images/cropped-gill-logo.png'
-import { Link } from 'react-router-dom';
 
 function Navbar() {
     return (
@@ -9,7 +8,7 @@ function Navbar() {
                 className="navbar navbar-expand-lg fixed-top navbar-light bg-light">
                 <div className="container">
                     <a className="navbar-brand logo" href="/">
-                        <img src={logo} alt="logo" height="70px"></img>
+                        <img src={logo} alt="logo" height="40px"></img>
                     </a>
                     <button
                         className="navbar-toggler collapsed"

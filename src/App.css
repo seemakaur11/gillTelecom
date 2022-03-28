@@ -17,3 +17,22 @@
     font-family: "Roboto Slab", Sans-serif;
     color: #353333;
 }
+  .slick-slide img {
+    width: 100%;
+    height: 450px;
+    background-repeat: no-repeat;
+}
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+.serviceHead{
+    align-items: center;
+    text-align: center;
+    color: orangered;
+    font-family: "Roboto Slab", Sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin: -1px
+}  
