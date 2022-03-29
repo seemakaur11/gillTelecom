@@ -3,6 +3,7 @@ import about from '../images/about.jpg';
 import about1 from '../images/about1.jpg';
 import about3 from '../images/about3.jpg';
 import about5 from '../images/about5.jpg';
+import Footer from './Footer';
 function About() {
   return (
     <div>
@@ -48,23 +49,31 @@ function About() {
         alignItems: "center",
         justifyContent: "center",
         textAlign: "center", overflow: "hidden",
-        fontWeight: "900px", fontSize: "13px",
+        fontWeight: "900px", fontSize: "17px",
         color: "black"
       }}>
         <div className='container py-5'>
-          <p className=''>
-            Today, GTS is a full service Internet communications firm made up of a culturally diverse team of designers, programmers and strategists. Gill Telecom Services’s sole focus is on helping our clients use technology to converse and communicate with the audiences that matter to them. In everything it does, Gill Telecom Service believes the power of the Internet lies not in the technology, but in it its strategic use.</p>
-          <p>We provide our customers with good products and services at a fair price, and believe that our business will prosper as a result. We have more than 15 years of experience in the technology field and are eager to use that experience to help you get the technology products and service that you deserve. From extranets to public-facing websites, from the simple to the complex, The Gill Telecom Service creates Internet programs that make an impact. With the attention span of Internet users getting shorter by the day, GTS believes the design of a website should always serve the content. Ultimately, whether an online experience is positive or negative is determined almost entirely by whether your visitor finds the information they are looking for easily. GTS builds websites that are easy for clients to maintain and simple for end users to navigate.</p>
+          <div className='row pt-3 m-0 p-0'>
+            <p style={{ marginBottom: "1.6em", fontFamily: "sans-serif", }}>
+              Today, GTS is a full service Internet communications firm made up of a culturally diverse team of designers, programmers and strategists.
+              Gill Telecom Services’s sole focus is on helping our clients use technology to converse and communicate with the audiences that matter to them.
+              In everything it does, Gill Telecom Service believes the power of the Internet lies not in the technology, but in it its strategic use.</p>
+            <p>We provide our customers with good products and services at a fair price, and believe that our business will prosper as a result.
+              We have more than 15 years of experience in the technology field and are eager to use that experience to help you get the technology products and service that you deserve.
+              From extranets to public-facing websites, from the simple to the complex, The Gill Telecom Service creates Internet programs that make an impact. With the attention span
+              of Internet users getting shorter by the day, GTS believes the design of a website should always serve the content. Ultimately, whether an online experience is positive
+              or negative is determined almost entirely by whether your visitor finds the information they are looking for easily. GTS builds websites that are easy for clients to maintain
+              and simple for end users to navigate.</p></div>
         </div>
       </section>
       <section>
         <div className='container-fluid m-0 p-0'>
           <div className='row'>
             <div className='col-lg-6 col-sm-12 m-0 p-0'>
-              <img src={about5} className='img-fluid' alt="about4-img"/>
+              <img src={about5} className='img-fluid' alt="about4-img" />
             </div>
             <div className='col-lg-6 col-sm-12 m-0 p-0' style={{ backgroundColor: "black" }}>
-              <div className='p-4 mt-4' style={{color:"white", fontSize:"12px"}}>
+              <div className='p-4 mt-4' style={{ color: "white", fontSize: "16px", fontFamily: "sans-serif", }}>
                 <p>We are professional Web design and Website development company
                   in India that supplies services of web design and development,
                   web application development, professional ecommerce online shopping systems,
@@ -88,6 +97,7 @@ function About() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   )
 }

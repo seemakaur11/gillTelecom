@@ -11,10 +11,10 @@
 }
 .pText{
     margin-bottom: 1.6em;
-    font-weight: 400px;
+    font-weight: 500px;
     overflow-wrap: break-word;
-    font-size: 13px;
-    font-family: "Roboto Slab", Sans-serif;
+    font-size: 16px;
+    font-family: Sans-serif;
     color: #353333;
 }
   .slick-slide img {
@@ -36,3 +36,7 @@
     font-weight: 600;
     margin: -1px
 }  
+.footerH4{
+    font-size: 25px;
+    font-weight: 700;
+}
