@@ -1,42 +1,106 @@
-.aboutText{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+.aboutText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-#container{
-    position: relative;
-    text-align: center;
-    color: white;
+#container {
+  position: relative;
+  text-align: center;
+  color: white;
 }
-.pText{
-    margin-bottom: 1.6em;
-    font-weight: 500px;
-    overflow-wrap: break-word;
-    font-size: 16px;
-    font-family: Sans-serif;
-    color: #353333;
+.pText {
+  margin-bottom: 1.5em;
+  font-weight: 500px;
+  overflow-wrap: break-word;
+  font-size: 12px;
+  font-family: Sans-serif;
+  color: #353333;
 }
-  .slick-slide img {
-    width: 100%;
-    height: 450px;
-    background-repeat: no-repeat;
+.slick-slide img {
+  width: 100%;
+  height: 450px;
+  background-repeat: no-repeat;
 }
-.top-right {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-  }
-.serviceHead{
-    align-items: center;
-    text-align: center;
-    color: orangered;
-    font-family: "Roboto Slab", Sans-serif;
-    font-size: 30px;
-    font-weight: 600;
-    margin: -1px
-}  
-.footerH4{
-    font-size: 25px;
-    font-weight: 700;
+
+.serviceHead {
+  align-items: center;
+  text-align: center;
+  color: orangered;
+  font-family: "Roboto Slab", Sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  margin: -1px;
+}
+.footer-social a {
+  text-align: center;
+  color: #999999;
+  font-size: 14px;
+  border: 1px solid #999999;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  padding: 6px 0;
+  margin: 4px;
+  border-radius: 35px;
+}
+.footer-social a:hover {
+  color: #ffffff;
+  background: #ff6900;
+  border-color: #ff6900;
+}
+.footer-contact i {
+  margin-right: 10px;
+  font-size: 16px;
+  color: #999999;
+}
+.footer-contact p {
+  margin-bottom: 10px;
+}
+
+.task-text-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.task-p {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: sans-serif;
+  color: white;
+}
+.task-h1 {
+  font-size: 20px;
+  font-weight: 500;
+  color: hsl(24, 100%, 50%);
+}
+.dev-text {
+  color: #000000;
+  font-family: "sans-serif";
+  margin-bottom: 1em;
+  margin: 0;
+  font-weight: 400px;
+  overflow-wrap: break-word;
+}
+.slider11 {
+  margin: 0;
+  padding: 0;
+}
+.slider11 ul {
+  list-style: none;
+  flex-wrap: nowrap;
+  display: flex;
+  overflow: hidden;
+  overflow-x: scroll;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+.slider ul::-webkit-scrollbar {
+  display: none;
+}
+.slider img {
+  vertical-align: bottom;
+  width: 100vw;
 }

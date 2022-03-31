@@ -4,6 +4,13 @@ import about1 from '../images/about1.jpg';
 import about3 from '../images/about3.jpg';
 import about5 from '../images/about5.jpg';
 import Footer from './Footer';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init({
+  offset: 120,
+  duration: 1000,
+  once: true,
+})
 function About() {
   return (
     <div>
@@ -13,14 +20,14 @@ function About() {
         </div>
       </section>
       <section>
-        <div className='container py-5'>
+        <div className='container py-3'>
           <div className='row py-5'>
             <div className="col-lg-5 col-sm-12">
-              <div className="myimage">
+              <div className="myimage"  data-aos="fade-right">
                 <img src={about1} className="img-fluid" alt="about1-img" />
               </div>
             </div>
-            <div className='col-lg-7 col-sm-12'>
+            <div className='col-lg-7 col-sm-12' data-aos="fade-left">
               <div className='ml-2'>
                 <h2 style={{ color: "#FF8900", fontWeight: "600", fontFamily: "sans-serif" }}>About us</h2>
                 <p className='pText'><span style={{ fontWeight: "800" }}>Gill Telecom Service</span> is a ‘Complete Technology Resource’
@@ -41,7 +48,7 @@ function About() {
         </div>
       </section>
 
-      <section style={{
+      <section data-aos="zoom-in-left" style={{
         backgroundImage: `url(${about3})`,
         backgroundSize: 'cover',
         position: 'relative',
@@ -49,7 +56,7 @@ function About() {
         alignItems: "center",
         justifyContent: "center",
         textAlign: "center", overflow: "hidden",
-        fontWeight: "900px", fontSize: "17px",
+        fontWeight: "900px", fontSize: "13px",
         color: "black"
       }}>
         <div className='container py-5'>
@@ -67,13 +74,13 @@ function About() {
         </div>
       </section>
       <section>
-        <div className='container-fluid m-0 p-0'>
+        <div className='container-fluid m-0 p-0' data-aos="fade-up">
           <div className='row'>
             <div className='col-lg-6 col-sm-12 m-0 p-0'>
               <img src={about5} className='img-fluid' alt="about4-img" />
             </div>
             <div className='col-lg-6 col-sm-12 m-0 p-0' style={{ backgroundColor: "black" }}>
-              <div className='p-4 mt-4' style={{ color: "white", fontSize: "16px", fontFamily: "sans-serif", }}>
+              <div className='p-4 mt-4' style={{ color: "white", fontSize: "12px", fontFamily: "sans-serif", }}>
                 <p>We are professional Web design and Website development company
                   in India that supplies services of web design and development,
                   web application development, professional ecommerce online shopping systems,
