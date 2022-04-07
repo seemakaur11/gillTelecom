@@ -104,3 +104,14 @@
   vertical-align: bottom;
   width: 100vw;
 }
+.input-field{
+  width: 400px;
+  height: 30px;
+  padding: 5px;
+  margin: 10px;
+  outline:#ffffff;
+  color:white;
+  background-color: transparent;
+
+  
+}
